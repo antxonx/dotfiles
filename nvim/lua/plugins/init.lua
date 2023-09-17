@@ -54,6 +54,10 @@ return {
     'lewis6991/gitsigns.nvim',
     -- Comments
     'numToStr/Comment.nvim',
-    -- tmux vim
-    'christoomey/vim-tmux-navigator'
+    -- Tmux vim
+    'christoomey/vim-tmux-navigator',
+    -- Indent
+    "lukas-reineke/indent-blankline.nvim",
+    -- Illuminate
+    'RRethy/vim-illuminate'
 }
