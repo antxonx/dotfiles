@@ -59,5 +59,7 @@ return {
     -- Indent
     "lukas-reineke/indent-blankline.nvim",
     -- Illuminate
-    'RRethy/vim-illuminate'
+    'RRethy/vim-illuminate',
+    -- Colorizer
+    'NvChad/nvim-colorizer.lua',
 }
