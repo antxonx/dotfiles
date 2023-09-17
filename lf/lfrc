@@ -109,3 +109,10 @@ cmd zip ${{
 
 # Icons
 set icons
+# Borders
+set drawbox true
+# Hidden files
+set hidden true
+# Numbers
+set number true
+set relativenumber true
