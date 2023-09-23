@@ -22,6 +22,20 @@ return {
       return opts
     end,
   },
+ {
+  "lewis6991/gitsigns.nvim",
+  opts = function(_, opts)
+   opts.signs = {
+    add          = { text = '+' },
+    change       = { text = '│' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+    untracked    = { text = '┆' },
+   }
+   return opts
+  end
+ }
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
