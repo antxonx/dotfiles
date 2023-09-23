@@ -33,4 +33,13 @@ return {
         { "<leader>U", "<cmd>UndotreeToggle<CR>" }
     }
   },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    init = function()
+      require("rose-pine").setup({
+        variant = 'main'
+      })
+    end
+  }
 }
