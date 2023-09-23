@@ -7,6 +7,10 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    undodir = vim.env.HOME .. "/.vim/.undo",
+    undofile = true,
+    scrolloff = 8,
+    colorcolumn = 120,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
