@@ -10,7 +10,7 @@ return {
     undodir = vim.env.HOME .. "/.vim/.undo",
     undofile = true,
     scrolloff = 8,
-    colorcolumn = 120,
+    colorcolumn = "120",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
