@@ -11,6 +11,12 @@ return {
     undofile = true,
     scrolloff = 8,
     colorcolumn = "120",
+    tabstop = 4,
+    softtabstop = 4,
+    shiftwidth = 4,
+    expandtab = 4,
+    smartindent = true,
+    incsearch = true,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
