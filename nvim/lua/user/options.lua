@@ -17,6 +17,8 @@ return {
     expandtab = true,
     smartindent = true,
     incsearch = true,
+    swapfile = false,
+    backup = false,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
