@@ -1,3 +1,5 @@
+require("user.custom.toggleCheckbox")
+
 return {
   -- Configure AstroNvim updates
   updater = {

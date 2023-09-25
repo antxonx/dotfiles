@@ -47,6 +47,10 @@ return {
     N = {
       "Nzzzv",
       desc = "Previous item search"
+    },
+    ["mc"] = {
+      "<cmd>ToggleCheckbox<CR>",
+      desc = "Toggle md checkbox"
     }
   },
   t = {
