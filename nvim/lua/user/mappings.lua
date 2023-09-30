@@ -1,5 +1,6 @@
 return {
   n = {
+    ["<leader>q"] = "<nop>",
     ["<C-q>"] = {
       "<C-v>"
     },
