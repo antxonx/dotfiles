@@ -42,14 +42,14 @@ return {
             "<C-u>zz",
             desc = "Page up",
         },
-        n = {
+        --[[ n = {
             "nzzzv",
             desc = "Next item search",
         },
         N = {
             "Nzzzv",
             desc = "Previous item search",
-        },
+        }, ]]
         ["mc"] = {
             "<cmd>ToggleCheckbox<CR>",
             desc = "Toggle md checkbox",
