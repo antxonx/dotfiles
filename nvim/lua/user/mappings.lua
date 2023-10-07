@@ -26,12 +26,12 @@ return {
             desc = "Pick to close",
         },
         ["<leader>b"] = { name = "Buffers" },
-        ["<A-k>"] = {
-            "<Esc>:m .-2<CR>==",
+        ["<C-k>"] = {
+            ":m .-2<CR>==",
             desc = "Move line up",
         },
-        ["<A-j>"] = {
-            "<Esc>:m .+1<CR>==",
+        ["<C-j>"] = {
+            ":m .+1<CR>==",
             desc = "Move line down",
         },
         ["<C-d>"] = {
@@ -42,14 +42,14 @@ return {
             "<C-u>zz",
             desc = "Page up",
         },
-        --[[ n = {
-            "nzzzv",
+        n = {
+            "nzz",
             desc = "Next item search",
         },
         N = {
-            "Nzzzv",
+            "Nzz",
             desc = "Previous item search",
-        }, ]]
+        },
         ["mc"] = {
             "<cmd>ToggleCheckbox<CR>",
             desc = "Toggle md checkbox",
@@ -59,13 +59,13 @@ return {
         -- ["<esc>"] = false,
     },
     v = {
-        ["<A-k>"] = {
-            ":m '<-2<CR>gv=gv",
+        ["<C-k>"] = {
+            ":m '<-2<CR>gvgv=gv",
             desc = "Move lines up",
         },
-        ["<A-j>"] = {
-            ":m '>+1<CR>gv=gv",
-            desc = "Move lines up",
+        ["<C-j>"] = {
+            ":m '>+1<CR>gvgv=gv",
+            desc = "Move lines down",
         },
     },
 }
