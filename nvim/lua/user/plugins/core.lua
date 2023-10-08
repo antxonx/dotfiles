@@ -43,8 +43,8 @@ return {
             opts.window.position = "float"
             opts.window.mappings = {
                 ["<space>"] = false, -- disable space until we figure out which-key disabling
-                ["<A-h>"] = "prev_source",
-                ["<A-l>"] = "next_source",
+                ["<S-h>"] = "prev_source",
+                ["<S-l>"] = "next_source",
                 F = utils.is_available "telescope.nvim" and "find_in_dir" or nil,
                 O = "system_open",
                 Y = "copy_selector",
@@ -77,6 +77,25 @@ return {
             }
             return opts
         end,
+    },
+    {
+        "windwp/nvim-autopairs",
+        event = "User AstroFile",
+        opts = {
+            check_ts = true,
+            ts_config = { java = false },
+            fast_wrap = {
+                map = "<C-e>",
+                chars = { "{", "[", "(", '"', "'" },
+                pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
+                offset = 0,
+                end_key = "$",
+                keys = "qwertyuiopzxcvbnmasdfghjkl",
+                check_comma = true,
+                highlight = "PmenuSel",
+                highlight_grey = "LineNr",
+            },
+        },
     },
     -- You can disable default plugins as follows:
     -- { "max397574/better-escape.nvim", enabled = false },

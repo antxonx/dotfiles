@@ -13,11 +13,11 @@ return {
         "RRethy/vim-illuminate",
         keys = {
             {
-                "<A-n>",
+                "<C-n>",
                 function() require("illuminate").goto_next_reference() end,
             },
             {
-                "<A-p>",
+                "<C-p>",
                 function() require("illuminate").goto_prev_reference() end,
             },
         },

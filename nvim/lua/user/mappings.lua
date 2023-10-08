@@ -26,14 +26,14 @@ return {
             desc = "Pick to close",
         },
         ["<leader>b"] = { name = "Buffers" },
-        ["<C-k>"] = {
+        --[[ ["<C-k>"] = {
             ":m .-2<CR>==",
             desc = "Move line up",
         },
         ["<C-j>"] = {
             ":m .+1<CR>==",
             desc = "Move line down",
-        },
+        }, ]]
         ["<C-d>"] = {
             "<C-d>zz",
             desc = "Page down",
@@ -59,11 +59,11 @@ return {
         -- ["<esc>"] = false,
     },
     v = {
-        ["<C-k>"] = {
+        ["<C-u>"] = {
             ":m '<-2<CR>gvgv=gv",
             desc = "Move lines up",
         },
-        ["<C-j>"] = {
+        ["<C-d>"] = {
             ":m '>+1<CR>gvgv=gv",
             desc = "Move lines down",
         },
