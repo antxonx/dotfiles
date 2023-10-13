@@ -24,6 +24,15 @@ return {
     },
     "christoomey/vim-tmux-navigator",
     {
+        "xiyaowong/transparent.nvim",
+        lazy = false,
+        init = function ()
+            local transparent = require("transparent")
+            transparent.clear_prefix("Gitsigns")
+            transparent.clear_prefix("Toggleterm")
+        end
+    },
+    {
         "mbbill/undotree",
         keys = {
             { "<leader>U", "<cmd>UndotreeToggle<CR>" },
