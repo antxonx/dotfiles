@@ -37,6 +37,12 @@ return {
         end,
     },
     {
+        "rcarriga/nvim-notify",
+        opts = function (_, opts)
+            opts.background_colour = "#000000"
+        end
+    },
+    {
         "nvim-neo-tree/neo-tree.nvim",
         opts = function(_, opts)
             local utils = require "astronvim.utils"
@@ -51,6 +57,11 @@ return {
                 h = "parent_or_close",
                 l = "child_or_open",
                 o = "open",
+            }
+            opts.filesystem.filtered_items = {
+                hide_dotfiles = false,
+                hide_gitignored = false,
+                hide_hidden = false,
             }
             return opts
         end,
