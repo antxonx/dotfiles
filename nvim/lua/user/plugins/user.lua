@@ -47,4 +47,12 @@ return {
             }
         end,
     },
+    {
+        "danymat/neogen",
+        dependencies = "nvim-treesitter/nvim-treesitter",
+        keys = {
+            {"<leader>ln", "<cmd>Neogen<CR>", desc = "Neogen docs"}
+        },
+        config = true,
+    }
 }
