@@ -3,5 +3,7 @@ alias gitlg="git log --graph --abbrev-commit --decorate --format=format:'@%C(bol
 alias tns="tmux new-session -s"
 alias tas="tmux attach -t"
 alias tls="tmux ls"
+alias gprc="gh pr create -B dev"
+alias gpre="gh pr edit"
 
 export PATH="$(go env GOPATH)/bin:$PATH"
