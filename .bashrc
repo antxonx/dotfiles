@@ -5,6 +5,4 @@ alias tas="tmux attach -t"
 alias tls="tmux ls"
 alias gprc="gh pr create -B dev"
 alias gpre="gh pr edit"
-
-export PATH="$(go env GOPATH)/bin:$PATH"
-export PATH="$HOME/.tmux/plugins/tmuxifier/bin:PATH"
+alias tmx="tmuxifier"
