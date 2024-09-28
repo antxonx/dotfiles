@@ -116,3 +116,6 @@ set hidden true
 # Numbers
 set number true
 set relativenumber true
+
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
