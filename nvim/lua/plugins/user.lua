@@ -149,4 +149,8 @@ return {
       return opts
     end,
   },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
 }
